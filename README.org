@@ -48,6 +48,11 @@ The configuration of dwm is done by creating a custom config.h and
 (re)compiling the source code.
 
 my configuration
+- [X] bind thinkpad audio keys
+- [ ] bind thinkpad mic key
+- [ ] bind thinkpad display brightness keys
+- [X] use L super as modkey
+- [X] use liberation monospace font
 
 * Patches
 modifications I've made

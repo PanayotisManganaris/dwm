@@ -2,7 +2,7 @@
 
 #include <X11/XF86keysym.h>
 /* appearance */
-static const unsigned int borderpx  = 1;        /* border pixel of windows */
+static const unsigned int borderpx  = 10;       /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const unsigned int gappih    = 20;       /* horiz inner gap between windows */
 static const unsigned int gappiv    = 10;       /* vert inner gap between windows */
@@ -22,10 +22,11 @@ static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
 static const char col_cyan[]        = "#005577";
+static const char col_purple[]      = "#68217a";
 static const char *colors[][3]      = {
-        /*               fg         bg         border   */
-        [SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-        [SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
+	/*               fg         bg         border   */
+	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
+	[SchemeSel]  = { col_gray4, col_purple, col_purple },
 };
 
 /* tagging */

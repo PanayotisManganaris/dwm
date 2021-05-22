@@ -50,7 +50,7 @@ The configuration of dwm is done by creating a custom config.h and
 my configuration
 - [X] set a purple theme congruent with doom-dark+ emacs theme
 - [X] bind thinkpad audio keys
-- [ ] bind thinkpad mic key
+- [X] bind thinkpad mic key
 - [ ] bind thinkpad display brightness keys
 - [X] use L super as modkey
 - [X] use liberation monospace font

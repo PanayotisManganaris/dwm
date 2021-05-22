@@ -88,6 +88,7 @@ static const char *termcmd[]  = { "st", NULL };
 static const char *upvol[]   = { "/home/panos/.local/bin/updatevolume.sh", "+", NULL };
 static const char *downvol[] = { "/home/panos/.local/bin/updatevolume.sh", "-", NULL };
 static const char *mutevol[] = { "/home/panos/.local/bin/updatevolume.sh", "m", NULL };
+static const char *mutemic[] = { "pactl", "set-source-mute", "@DEFAULT_SOURCE@", "toggle", NULL };
 
 static const Key keys[] = {
         /* modifier                     key        function        argument */
@@ -145,7 +146,8 @@ static const Key keys[] = {
         { MODKEY|ShiftMask,             XK_q,      quit,           {0} },
         { 0,                       XF86XK_AudioLowerVolume, spawn, {.v = downvol } },
         { 0,                       XF86XK_AudioMute, spawn, {.v = mutevol } },
-        { 0,                       XF86XK_AudioRaiseVolume, spawn, {.v = upvol   } },
+        { 0,                       XF86XK_AudioRaiseVolume, spawn, {.v = upvol } },
+        { 0,                       XF86XK_AudioMicMute, spawn, {.v = mutemic } },
 };
 
 /* button definitions */
@@ -164,4 +166,3 @@ static const Button buttons[] = {
         { ClkTagBar,            MODKEY,         Button1,        tag,            {0} },
         { ClkTagBar,            MODKEY,         Button3,        toggletag,      {0} },
 };
-

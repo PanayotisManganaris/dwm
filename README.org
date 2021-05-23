@@ -56,15 +56,17 @@ my configuration
 - [X] use liberation monospace font
 - [X] set unobtrusive window gaps
 - [X] bind commands for adjusting gaps
-  - ~s-u/U~ increase/decrease all gaps
-  - ~s-i/I~ increase/decrease inner gaps
-  - ~s-o/O~ increase/decrease outer gaps
-  - ~s-M-7/&~ increase/decrease inner horizontal gaps
-  - ~s-M-8/*~ increase/decrease inner vertical gaps
-  - ~s-M-9/(~ increase/decrease outer horizontal gaps
-  - ~s-M-0/)~ increase/decrease outer vertical gaps
-  - ~s-M-6/^~ toggle/default gaps
+  - [X] ~s-u/U~ increase/decrease all gaps
+  - [X] ~s-i/I~ increase/decrease inner gaps
+  - [X] ~s-o/O~ increase/decrease outer gaps
+  - [X] ~s-M-7/&~ increase/decrease inner horizontal gaps
+  - [X] ~s-M-8/*~ increase/decrease inner vertical gaps
+  - [X] ~s-M-9/(~ increase/decrease outer horizontal gaps
+  - [X] ~s-M-0/)~ increase/decrease outer vertical gaps
+  - [X] ~s-M-6/^~ toggle/default gaps
 - [X] add a large variety of window configuration presets
+- [X] bind apps
+  - [X] ~s-x~ dmenu-run (with purple theme)
 
 * Patches
 modifications I've made

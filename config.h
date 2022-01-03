@@ -86,10 +86,12 @@ static const char *dmenucmd[]    = { "dmenu_run",
                                      "-m", dmenumon, "-fn", dmenufont,
 				     "-nb", col_gray1, "-nf", col_gray3,
 				     "-sb", col_purple, "-sf", col_gray4, NULL };
-static const char *passmenucmd[] = { "passmenu", NULL };
+static const char *passmenucmd[] = { "/usr/bin/passmenu", NULL };
 static const char *dwmdiecmd[]   = { "pkill", "dwm", NULL };
 static const char *termcmd[]     = { "st", NULL };
 static const char *emacsclient[] = { "emacsclient", "-c", NULL };
+static const char *clipin[]      = { "clipcat-menu", "--finder=dmenu", "insert", NULL };
+static const char *clipdel[]     = { "clipcat-menu", "--finder=dmenu", "remove", NULL };
 
 static const char *upvol[]   = { "/home/panos/.local/bin/updatevolume.sh", "+", NULL };
 static const char *downvol[] = { "/home/panos/.local/bin/updatevolume.sh", "-", NULL };
@@ -111,6 +113,8 @@ static Key keys[] = {
         { MODKEY|ShiftMask,             XK_x,                     spawn,          {.v = passmenucmd } },
         { MODKEY|ShiftMask,             XK_Return,                spawn,          {.v = termcmd     } },
 	{ MODKEY,                       XK_e,                     spawn,          {.v = emacsclient } },
+	{ MODKEY,                       XK_y,                     spawn,          {.v = clipin      } },
+	{ MODKEY|ShiftMask,             XK_y,                     spawn,          {.v = clipdel     } },
         //facade						  
         { MODKEY,                       XK_b,                     togglebar,      {0} },
         //focus stack and space					  

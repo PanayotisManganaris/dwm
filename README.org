@@ -92,3 +92,4 @@ modifications I've made
 - [[https://tools.suckless.org/dmenu/][dmenu]] and its dependents must be installed separately
 - [[https://github.com/torrinfail/dwmblocks][dwmblocks]] is installed and initialized separately
 - [[https://github.com/perkele1989/light][light]] is installed separately
+- [[https://github.com/xrelkd/clipcat][clipcat]] is installed separately

@@ -69,11 +69,12 @@ my configuration
   - [X] ~s-m~ monocle
   - [X] ~s-k~ deck
   - [X] ~s-f~ float
-- [X] bind apps
+- [-] bind apps
   - [X] ~s-S-RET~ [[https://st.suckless.org/][simple terminal]]
   - [X] ~s-x~ dmenu-run (with purple theme)
   - [X] ~s-M-S-q~ pkill dwm
   - [X] ~s-e~ launch emacs client
+  - [ ] ~s-w~ launch nyxt browser
   - [X] ~s-p~ passmenu
 - [X] bind dunst commands
   - [X] ~s-`~ close notification
@@ -93,3 +94,5 @@ modifications I've made
 - [[https://github.com/torrinfail/dwmblocks][dwmblocks]] is installed and initialized separately
 - [[https://github.com/perkele1989/light][light]] is installed separately
 - [[https://github.com/xrelkd/clipcat][clipcat]] is installed separately
+- [[https://nyxt.atlas.engineer/][nyxt]] is installed separately
+- [[https://www.gnu.org/software/emacs/][emacs]] is installed separately

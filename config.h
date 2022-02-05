@@ -90,6 +90,7 @@ static const char *passmenucmd[] = { "/usr/bin/passmenu", NULL };
 static const char *dwmdiecmd[]   = { "pkill", "dwm", NULL };
 static const char *termcmd[]     = { "st", NULL };
 static const char *emacsclient[] = { "emacsclient", "-c", NULL };
+static const char *webbrowser[]  = { "nyxt", NULL };
 static const char *clipin[]      = { "clipcat-menu", "--finder=dmenu", "insert", NULL };
 static const char *clipdel[]     = { "clipcat-menu", "--finder=dmenu", "remove", NULL };
 
@@ -113,6 +114,7 @@ static Key keys[] = {
         { MODKEY|ShiftMask,             XK_x,                     spawn,          {.v = passmenucmd } },
         { MODKEY|ShiftMask,             XK_Return,                spawn,          {.v = termcmd     } },
 	{ MODKEY,                       XK_e,                     spawn,          {.v = emacsclient } },
+	{ MODKEY,                       XK_w,                     spawn,          {.v = webbrowser  } },
 	{ MODKEY,                       XK_y,                     spawn,          {.v = clipin      } },
 	{ MODKEY|ShiftMask,             XK_y,                     spawn,          {.v = clipdel     } },
         //facade						  

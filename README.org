@@ -57,6 +57,10 @@ my configuration
 - [X] use liberation monospace font
 - [X] set unobtrusive window gaps
 - [-] emacs-like focus switching
+  - [X] ~s-#~ switch tag focus
+  - [X] ~s-S-#~ assign window to tag
+  - [X] ~s-C-#~ combine tag focus
+  - [X] ~s-C-S-#~ assign window to multiple tags
   - [ ] ~s-f/b~ switch focus horizontally
   - [X] ~s-n/p~ switch focus vertically
 - [X] bind commands for adjusting gaps
@@ -74,6 +78,9 @@ my configuration
   - [X] ~s-k~ deck
   - [X] ~s-f~ float
   - [ ] binary-space partitioning
+- [X] bind monitor focus commands
+  - [X] ~s-M-#~ change monitor of focus
+  - [X] ~s-C-M-S-#~ tag monitor
 - [-] bind apps
   - [X] ~s-S-RET~ [[https://st.suckless.org/][simple terminal]]
   - [X] ~s-x~ dmenu-run (with purple theme)

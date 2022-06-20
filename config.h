@@ -91,7 +91,7 @@ static const char *termcmd[]     = { "st", NULL };
 static const char *dwmdiecmd[]   = { "pkill", "dwm", NULL };
 static const char *emacsclient[] = { "emacsclient", "-c", NULL };
 static const char *passmenucmd[] = { "passmenu", NULL };
-static const char *browsecmd[]   = { "nyxt", NULL };
+static const char *browsecmd[]   = { "/home/panos/.local/bin/nyxtwindow.sh", NULL };
 static const char *clipin[]      = { "clipcat-menu", "--finder=dmenu", "insert", NULL };
 static const char *clipdel[]     = { "clipcat-menu", "--finder=dmenu", "remove", NULL };
 static const char *upvol[]   = { "/home/panos/.local/bin/updatevolume.sh", "+", NULL };

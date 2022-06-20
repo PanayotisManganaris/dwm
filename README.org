@@ -93,6 +93,7 @@ modifications I've made
 - [X] add [[https://dwm.suckless.org/patches/systray/][systray]]
 - [X] add [[https://dwm.suckless.org/patches/cfacts/][cfacts]] + [[https://dwm.suckless.org/patches/vanitygaps/][vanitygaps]] combo
 - [X] add [[https://dwm.suckless.org/patches/accessnthmonitor/][accessnthmonitor]] for multi-monitor display
+- [X] add [[https://dwm.suckless.org/patches/mainmon/][mainmon]] to disambiguate systray placement
 - [ ] cross-session window recovery
 
 * notes

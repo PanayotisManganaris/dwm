@@ -92,7 +92,7 @@ static const char *dmenucmd[]    = { "dmenu_run",
                                      "-sb", col_purple, "-sf", col_gray4, NULL };
 static const char *termcmd[]     = { "st", NULL };
 static const char *dwmdiecmd[]   = { "pkill", "dwm", NULL };
-static const char *emacsclient[] = { "emacsclient", "-c", NULL };
+static const char *emacsclient[] = { "/home/panos/.local/bin/ec", NULL };
 static const char *passmenucmd[] = { "passmenu", NULL };
 static const char *browsecmd[]   = { "/home/panos/.local/bin/nyxtwindow.sh", NULL };
 static const char *clipin[]      = { "clipcat-menu", "--finder=dmenu", "insert", NULL };

@@ -53,7 +53,19 @@ my configuration
 - [ ] bind thinkpad display brightness keys
 - [X] use L super as modkey
 - [X] use liberation monospace font
+- [X] set unobtrusive window gaps
+- [X] bind commands for adjusting gaps
+  - ~s-u/U~ increase/decrease all gaps
+  - ~s-i/I~ increase/decrease inner gaps
+  - ~s-o/O~ increase/decrease outer gaps
+  - ~s-M-7/&~ increase/decrease inner horizontal gaps
+  - ~s-M-8/*~ increase/decrease inner vertical gaps
+  - ~s-M-9/(~ increase/decrease outer horizontal gaps
+  - ~s-M-0/)~ increase/decrease outer vertical gaps
+  - ~s-M-6/^~ toggle/default gaps
+- [X] add a large variety of window configuration presets
 
 * Patches
 modifications I've made
 - [X] add [[https://dwm.suckless.org/patches/systray/][systray]]
+- [X] add [[https://dwm.suckless.org/patches/cfacts/][cfacts]] + [[https://dwm.suckless.org/patches/vanitygaps/][vanitygaps]] combo

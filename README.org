@@ -65,12 +65,12 @@ my configuration
   - [X] ~s-M-0/)~ increase/decrease outer vertical gaps
   - [X] ~s-M-6/^~ toggle/default gaps
 - [X] add a large variety of window configuration presets
-- [-] bind apps
+- [X] bind apps
   - [X] ~s-S-RET~ [[https://st.suckless.org/][simple terminal]]
   - [X] ~s-x~ dmenu-run (with purple theme)
   - [X] ~s-M-S-q~ pkill dwm
   - [X] ~s-e~ launch emacs client
-  - [ ] ~s-p~ passmenu
+  - [X] ~s-p~ passmenu
 - [X] bind dunst commands
   - [X] ~s-`~ close notification
   - [X] ~s-S-`~ close all notifications

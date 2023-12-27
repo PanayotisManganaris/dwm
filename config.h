@@ -108,6 +108,7 @@ static Key keys[] = {
         /* modifier                     key                       function        argument */
         //apps
         { MODKEY,                       XK_x,                     spawn,          {.v = dmenucmd    } },
+        { MODKEY|ShiftMask,             XK_p,                     spawn,          {.v = passmenucmd } },
         { MODKEY|ShiftMask,             XK_Return,                spawn,          {.v = termcmd     } },
         { MODKEY,                       XK_e,                     spawn,          {.v = emacsclient } },
         //facade
@@ -115,8 +116,8 @@ static Key keys[] = {
         //focus stack and space
         { MODKEY,                       XK_n,                     focusstack,     {.i = +1 } },
         { MODKEY,                       XK_p,                     focusstack,     {.i = -1 } },
-        { MODKEY|ShiftMask,             XK_n,                     incnmaster,     {.i = +1 } },
-        { MODKEY|ShiftMask,             XK_p,                     incnmaster,     {.i = -1 } },
+        { MODKEY|Mod1Mask,              XK_n,                     incnmaster,     {.i = +1 } },
+        { MODKEY|Mod1Mask,              XK_p,                     incnmaster,     {.i = -1 } },
         { MODKEY|ShiftMask,             XK_bracketleft,           setmfact,       {.f = -0.05} },
         { MODKEY|ShiftMask,             XK_bracketright,          setmfact,       {.f = +0.05} },
         { MODKEY,                       XK_bracketleft,           setcfact,       {.f = +0.25} },

@@ -68,6 +68,7 @@ my configuration
 - [-] bind apps
   - [X] ~s-S-RET~ [[https://st.suckless.org/][simple terminal]]
   - [X] ~s-x~ dmenu-run (with purple theme)
+  - [X] ~s-M-S-q~ pkill dwm
   - [ ] ~s-e~ launch emacs client
   - [ ] ~s-p~ passmenu
 - [X] bind dunst commands

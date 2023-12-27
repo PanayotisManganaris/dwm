@@ -88,6 +88,7 @@ static const char *dmenucmd[]    = { "dmenu_run",
                                      "-nb", col_gray1, "-nf", col_gray3,
                                      "-sb", col_purple, "-sf", col_gray4, NULL };
 static const char *termcmd[]     = { "st", NULL };
+static const char *dwmdiecmd[]   = { "pkill", "dwm", NULL };
 static const char *upvol[]   = { "/home/panos/.local/bin/updatevolume.sh", "+", NULL };
 static const char *downvol[] = { "/home/panos/.local/bin/updatevolume.sh", "-", NULL };
 static const char *mutevol[] = { "/home/panos/.local/bin/updatevolume.sh", "m", NULL };
@@ -160,6 +161,7 @@ static Key keys[] = {
         TAGKEYS(XK_9, 8)
         //dwm's fate
         { MODKEY|ShiftMask,             XK_q,                     quit,          {0} },
+        { MODKEY|Mod1Mask|ShiftMask,    XK_q,                     spawn,         {.v = dwmdiecmd} },
         //media
         { 0,                            XF86XK_AudioLowerVolume,  spawn,         {.v = downvol } },
         { 0,                            XF86XK_AudioMute,         spawn,         {.v = mutevol } },

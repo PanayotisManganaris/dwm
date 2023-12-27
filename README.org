@@ -53,8 +53,12 @@ my configuration
 - [X] bind thinkpad mic key
 - [X] bind thinkpad display brightness keys
 - [X] use L super as modkey
+- [ ] remap PrtSc to SuperL (thinkpad keyboard)
 - [X] use liberation monospace font
 - [X] set unobtrusive window gaps
+- [-] emacs-like focus switching
+  - [ ] ~s-f/b~ switch focus horizontally
+  - [X] ~s-n/p~ switch focus vertically
 - [X] bind commands for adjusting gaps
   - [X] ~s-u/U~ increase/decrease all gaps
   - [X] ~s-i/I~ increase/decrease inner gaps
@@ -64,18 +68,19 @@ my configuration
   - [X] ~s-M-9/(~ increase/decrease outer horizontal gaps
   - [X] ~s-M-0/)~ increase/decrease outer vertical gaps
   - [X] ~s-M-6/^~ toggle/default gaps
-- [X] add a large variety of window configuration presets
+- [-] add a large variety of window configuration presets
   - [X] ~s-t~ tile
   - [X] ~s-m~ monocle
   - [X] ~s-k~ deck
   - [X] ~s-f~ float
+  - [ ] binary-space partitioning
 - [-] bind apps
   - [X] ~s-S-RET~ [[https://st.suckless.org/][simple terminal]]
   - [X] ~s-x~ dmenu-run (with purple theme)
   - [X] ~s-M-S-q~ pkill dwm
   - [X] ~s-e~ launch emacs client
   - [ ] ~s-w~ launch nyxt browser
-  - [X] ~s-p~ passmenu
+  - [X] ~s-P~ passmenu
 - [X] bind dunst commands
   - [X] ~s-`~ close notification
   - [X] ~s-S-`~ close all notifications
@@ -87,6 +92,8 @@ my configuration
 modifications I've made
 - [X] add [[https://dwm.suckless.org/patches/systray/][systray]]
 - [X] add [[https://dwm.suckless.org/patches/cfacts/][cfacts]] + [[https://dwm.suckless.org/patches/vanitygaps/][vanitygaps]] combo
+- [ ] add [[https://dwm.suckless.org/patches/accessnthmonitor/][accessnthmonitor]] for multi-monitor display
+- [ ] cross-session window recovery
 
 * notes
 - [[https://github.com/dunst-project/dunst][dunst]] and libnotify must be installed separately

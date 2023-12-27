@@ -146,7 +146,18 @@ static Key keys[] = {
         //Layouts
         { MODKEY,                       XK_t,                     setlayout,      {.v = &layouts[0]} },
         { MODKEY,                       XK_m,                     setlayout,      {.v = &layouts[1]} },
-        { MODKEY,                       XK_s,                     setlayout,      {.v = &layouts[2]} },
+        /* { MODKEY,                       XK_s,                     setlayout,      {.v = &layouts[2]} }, */
+        /* { MODKEY,                       XK_d,                     setlayout,      {.v = &layouts[3]} }, */
+        { MODKEY,                       XK_k,                     setlayout,      {.v = &layouts[4]} },
+        /* { MODKEY,                       XK_hyphen,                setlayout,      {.v = &layouts[5]} }, */
+        /* { MODKEY|ShiftMask,             XK_hyphen,                setlayout,      {.v = &layouts[6]} }, */
+        /* { MODKEY|ShiftMask,             XK_h,                     setlayout,      {.v = &layouts[7]} }, */
+        /* { MODKEY,                       XK_g,                     setlayout,      {.v = &layouts[8]} }, */
+        /* { MODKEY,                       XK_h,                     setlayout,      {.v = &layouts[9]} }, */
+        /* { MODKEY|ShiftMask,             XK_g,                     setlayout,      {.v = &layouts[10]} }, */
+        /* { MODKEY|ShiftMask,             XK_m,                     setlayout,      {.v = &layouts[11]} }, */
+        /* { MODKEY|ShiftMask,             XK_f,                     setlayout,      {.v = &layouts[12]} }, */
+        { MODKEY,                       XK_f,                     setlayout,      {.v = &layouts[13]} },
         { MODKEY,                       XK_space,                 setlayout,      {0} },
         { MODKEY|ShiftMask,             XK_space,                 togglefloating, {0} },
         //desktops + tags

@@ -65,6 +65,10 @@ my configuration
   - [X] ~s-M-0/)~ increase/decrease outer vertical gaps
   - [X] ~s-M-6/^~ toggle/default gaps
 - [X] add a large variety of window configuration presets
+  - [X] ~s-t~ tile
+  - [X] ~s-m~ monocle
+  - [X] ~s-k~ deck
+  - [X] ~s-f~ float
 - [X] bind apps
   - [X] ~s-S-RET~ [[https://st.suckless.org/][simple terminal]]
   - [X] ~s-x~ dmenu-run (with purple theme)

@@ -90,10 +90,13 @@ static const char *dmenucmd[]    = { "dmenu_run",
 static const char *termcmd[]     = { "st", NULL };
 static const char *dwmdiecmd[]   = { "pkill", "dwm", NULL };
 static const char *emacsclient[] = { "emacsclient", "-c", NULL };
+static const char *passmenucmd[] = { "passmenu", NULL };
 static const char *upvol[]   = { "/home/panos/.local/bin/updatevolume.sh", "+", NULL };
 static const char *downvol[] = { "/home/panos/.local/bin/updatevolume.sh", "-", NULL };
 static const char *mutevol[] = { "/home/panos/.local/bin/updatevolume.sh", "m", NULL };
 static const char *mutemic[] = { "pactl", "set-source-mute", "@DEFAULT_SOURCE@", "toggle", NULL };
+static const char *uplit[]   = { "/home/panos/.local/bin/updatelight.sh", "+", NULL };
+static const char *downlit[] = { "/home/panos/.local/bin/updatelight.sh", "-", NULL };
 // notification management commands
 static const char *close_note[] = { "/sbin/dunstctl", "close", NULL };
 static const char *close_note_all[] = { "/sbin/dunstctl", "close-all", NULL };
@@ -169,6 +172,8 @@ static Key keys[] = {
         { 0,                            XF86XK_AudioMute,         spawn,         {.v = mutevol } },
         { 0,                            XF86XK_AudioRaiseVolume,  spawn,         {.v = upvol   } },
         { 0,                            XF86XK_AudioMicMute,      spawn,         {.v = mutemic } },
+        { 0,                            XF86XK_MonBrightnessDown, spawn,         {.v = downlit } },
+        { 0,                            XF86XK_MonBrightnessUp,   spawn,         {.v = uplit   } },
         //dunst notifications
         { MODKEY,                       XK_grave,                 spawn,         {.v = close_note     } },
         { MODKEY|ShiftMask,             XK_grave,                 spawn,         {.v = close_note_all } },

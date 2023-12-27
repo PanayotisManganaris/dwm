@@ -51,7 +51,7 @@ my configuration
 - [X] set a purple theme congruent with doom-dark+ emacs theme
 - [X] bind thinkpad audio keys
 - [X] bind thinkpad mic key
-- [ ] bind thinkpad display brightness keys
+- [X] bind thinkpad display brightness keys
 - [X] use L super as modkey
 - [X] use liberation monospace font
 - [X] set unobtrusive window gaps
@@ -87,3 +87,4 @@ modifications I've made
 - [[https://github.com/dunst-project/dunst][dunst]] and libnotify must be installed separately
 - [[https://tools.suckless.org/dmenu/][dmenu]] and its dependents must be installed separately
 - [[https://github.com/torrinfail/dwmblocks][dwmblocks]] is installed and initialized separately
+- [[https://github.com/perkele1989/light][light]] is installed separately

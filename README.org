@@ -65,10 +65,24 @@ my configuration
   - [X] ~s-M-0/)~ increase/decrease outer vertical gaps
   - [X] ~s-M-6/^~ toggle/default gaps
 - [X] add a large variety of window configuration presets
-- [X] bind apps
+- [-] bind apps
+  - [X] ~s-S-RET~ [[https://st.suckless.org/][simple terminal]]
   - [X] ~s-x~ dmenu-run (with purple theme)
+  - [ ] ~s-e~ launch emacs client
+  - [ ] ~s-p~ passmenu
+- [X] bind dunst commands
+  - [X] ~s-`~ close notification
+  - [X] ~s-S-`~ close all notifications
+  - [X] ~s-=~ pause notifications
+  - [X] ~s-BS~ recall notification
+  - [X] ~s-\~ open context menu on notification
 
 * Patches
 modifications I've made
 - [X] add [[https://dwm.suckless.org/patches/systray/][systray]]
 - [X] add [[https://dwm.suckless.org/patches/cfacts/][cfacts]] + [[https://dwm.suckless.org/patches/vanitygaps/][vanitygaps]] combo
+
+* notes
+- [[https://github.com/dunst-project/dunst][dunst]] and libnotify must be installed separately
+- [[https://tools.suckless.org/dmenu/][dmenu]] and its dependents must be installed separately
+- [[https://github.com/torrinfail/dwmblocks][dwmblocks]] is installed and initialized separately

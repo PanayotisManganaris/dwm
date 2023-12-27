@@ -92,6 +92,12 @@ static const char *upvol[]   = { "/home/panos/.local/bin/updatevolume.sh", "+", 
 static const char *downvol[] = { "/home/panos/.local/bin/updatevolume.sh", "-", NULL };
 static const char *mutevol[] = { "/home/panos/.local/bin/updatevolume.sh", "m", NULL };
 static const char *mutemic[] = { "pactl", "set-source-mute", "@DEFAULT_SOURCE@", "toggle", NULL };
+// notification management commands
+static const char *close_note[] = { "/sbin/dunstctl", "close", NULL };
+static const char *close_note_all[] = { "/sbin/dunstctl", "close-all", NULL };
+static const char *history_note[] = { "/sbin/dunstctl", "history-pop", NULL };
+static const char *pause_note[] = { "/sbin/dunstctl", "set-paused toggle", NULL };
+static const char *context_note[] = { "/sbin/dunstctl", "context", NULL };
 
 static Key keys[] = {
         /* modifier                     key                       function        argument */
@@ -159,6 +165,12 @@ static Key keys[] = {
         { 0,                            XF86XK_AudioMute,         spawn,         {.v = mutevol } },
         { 0,                            XF86XK_AudioRaiseVolume,  spawn,         {.v = upvol   } },
         { 0,                            XF86XK_AudioMicMute,      spawn,         {.v = mutemic } },
+        //dunst notifications
+        { MODKEY,                       XK_grave,                 spawn,         {.v = close_note     } },
+        { MODKEY|ShiftMask,             XK_grave,                 spawn,         {.v = close_note_all } },
+        { MODKEY,                       XK_BackSpace,             spawn,         {.v = history_note   } },
+        { MODKEY,                       XK_equal,                 spawn,         {.v = pause_note     } },
+        { MODKEY,                       XK_backslash,             spawn,         {.v = context_note   } },
 };
 
 /* button definitions */
